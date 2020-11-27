@@ -22,6 +22,12 @@ export class Goods {
   }
 }
 
+export function getRecomment() {
+  return request({
+    url: '/recommend'
+  })
+}
+
 export class Shop {
   constructor(shopInfo) {
     this.logo = shopInfo.shopLogo;
